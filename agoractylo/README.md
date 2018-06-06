@@ -1,27 +1,27 @@
-# Agoractylo
+# Agoractylo - Projet web sequence 3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project is developed during the formation Passerelle Numérique at Ecole Centrale de Marseille.
 
-## Development server
+## **Prerequisite**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- have access to the internet
+- have MongoDB, Node.js and Angular 5 installed on your computer
+- have access to the console
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+First, you must clone or download this repo.
 
-## Build
+Then, choose a directory in your system to install, and open a console, on Linux Ubuntu your can directly right click and open a new terminal inside a folder.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Navigate inside folders to the directory where is the folder of this project by running `cd foldername` , until you reached the folder containing `server` and `agoractylo`.
 
-## Running unit tests
+Firstly run a `cd` to place yourself inside the directory by using a console and command lines and run the command `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Open a new terminal and run the command `mongod` **let this console open the whole time you want to use the app**
 
-## Running end-to-end tests
+Run `cd server` followed by `node server`command to run the "back-end" of the project. **do not close it neither**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Then, open a new terminal and run the command `cd agoractylo`once you've reached the directory of the project, finally you can execute `ng serve --open`and see your browser open on the agoractylo prototype
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
