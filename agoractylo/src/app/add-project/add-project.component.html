@@ -1,0 +1,8 @@
+<form method="POST">
+  <legend>Ajouter un nouveau projet</legend>
+  <label for="titleForm">Titre:</label>
+  <input [(ngModel)]="addProjectData.title" id="titleForm" name="title" type="text" placeholder="Titre du projet"><br>
+  <label for="contentForm">Synopsis:</label><br>
+  <textarea [(ngModel)]="addProjectData.content" name="synopsis" id="synopsis" cols="30" rows="10" placeholder="Le synopsis du projet"></textarea><br>  
+  <input class="btn btn-primary" type="button" (click)="addProject()" value="Créer ce projet">
+</form>

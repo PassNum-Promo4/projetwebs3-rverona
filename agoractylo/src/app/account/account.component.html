@@ -1,0 +1,12 @@
+<form class="form">
+    <div class="form-group">
+      <label for="uname1">Nouveau nom d'utilisateur</label>
+      <input [(ngModel)]='loginUserData.username' type="text" name="username" class="form-control rounded-0" placeholder='Pseudonyme' required>
+    </div>
+    <div class="form-group">
+      <label for="">Mot de passe</label>
+      <input [(ngModel)]='loginUserData.password' type="password" name="password" class="form-control rounded-0" placeholder='Mot de passe' required>
+    </div>
+    <button (click)='editAccount()' type="button" class="btn btn-secondary float-left">Modifier le compte</button>
+    <button (click)='deleteAccount()' type="button" class="btn btn-danger float-left">Supprimer le compte</button>
+</form>

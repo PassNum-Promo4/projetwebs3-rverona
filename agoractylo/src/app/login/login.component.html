@@ -1,0 +1,8 @@
+<form method="POST">
+  <legend>Se connecter</legend>
+  <label for="nameForm">Nom d'utilisateur: </label>
+  <input [(ngModel)]="loginUserData.username" id="nameForm" name="username" type="text" placeholder="Pseudonyme"><br>
+  <label for="passwordForm">Mot de passe: </label>
+  <input [(ngModel)]="loginUserData.password" id="passwordForm" name="password" type="password" placeholder="Mot de passe top secret"><br>
+  <input class="btn btn-primary" type="submit" (click)="loginUser()" value="Login">
+</form>

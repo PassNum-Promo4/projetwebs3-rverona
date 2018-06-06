@@ -1,0 +1,8 @@
+<form method="POST">
+  <legend>Inscription</legend>
+  <label for="nameForm">Nom d'utilisateur: </label>
+  <input [(ngModel)]="userData.username" id="nameForm" name="username" type="text" placeholder="Pseudonyme"><br>
+  <label for="passwordForm">Mot de passe: </label>
+  <input [(ngModel)]="userData.password" id="passwordForm" name="password" type="password" placeholder="Mot de passe top secret"><br>
+  <input class="btn btn-primary" type="submit" (click)="registerNewUser()" value="S'inscrire">        
+</form>

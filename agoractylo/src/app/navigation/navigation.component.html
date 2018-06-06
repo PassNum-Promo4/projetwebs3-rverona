@@ -1,0 +1,15 @@
+<a *ngIf="!_auth.loggedIn()" routerLink="/register"><button class="btn btn-success">S'inscrire</button></a>
+
+<a *ngIf="!_auth.loggedIn()"routerLink="/login"><button class="btn btn-info">Se connecter</button></a>
+
+<a *ngIf="_auth.loggedIn()" (click)="_auth.logout()"><button class="btn btn-danger">Se déconnecter</button></a>
+
+<a routerLink="/addproject"><button class="btn btn-info">Créer un projet</button></a>
+
+<a routerLink="/allprojects"><button class="btn btn-info">Voir tous les projets</button></a>
+
+<a routerLink="/userprojects"><button class="btn btn-info">Voir mes projets</button></a>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
